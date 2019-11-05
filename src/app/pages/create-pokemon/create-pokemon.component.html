@@ -1,0 +1,20 @@
+<h2>Ajouter un nouveau Pokemon</h2>
+
+<form (submit)="myForm.valid && addPokemonToList(pokemon)" #myForm="ngForm">
+    <label for="name">Nom du Pokemon:</label><br/>
+    <input type="name" [(ngModel)]="newPokemon.name" name="name" required #name="ngModel" /><br />
+    <div *ngIf="name.errors">
+        Veuillez entrer un nom
+    </div>
+    <label for="imageUrl">Image du Pokemon:</label><br/>
+    <input type="imageUrl" [(ngModel)]="newPokemon.imageUrl" name="imageUrl" required #imgUrl="ngModel"/><br />
+    <div *ngIf="imgUrl.errors">
+        Veuillez entrer une adresse Url
+    </div>
+    <label for="description">Description du Pokemon:</label>
+    <div><textarea type="description" [(ngModel)]="newPokemon.description" name="description" rows="5" cols="30"></textarea></div>
+    <button>Ajouter</button><br />
+
+    {{newPokemon.name}}
+    {{newPokemon.imageUrl}}
+</form >

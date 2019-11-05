@@ -1,0 +1,4 @@
+<div *ngFor="let p of pokemons" (click)="onPokemonClick(p)">
+        <div class="nom">{{p.name}}</div>
+        <div class="imageBis"><img class="image" [src] = p.imageUrl /></div>
+    </div>

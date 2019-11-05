@@ -1,0 +1,5 @@
+<div *ngIf="detailedPokemon" class="detail">
+    <div class="nom">{{ detailedPokemon.name }}</div>
+    <div ><img class="image" [src]="detailedPokemon.imageUrl" /></div>
+    <div class="descr">{{ detailedPokemon.description }}</div>
+</div>

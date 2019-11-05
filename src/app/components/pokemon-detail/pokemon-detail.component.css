@@ -1,0 +1,21 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nom {
+    text-align: center;
+    font-size: 40px;
+}
+.image {
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 10px; 
+    background-color: gold;
+}
+
+.descr {
+    font-size: 25px;
+}

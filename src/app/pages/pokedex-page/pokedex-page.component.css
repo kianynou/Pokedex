@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
