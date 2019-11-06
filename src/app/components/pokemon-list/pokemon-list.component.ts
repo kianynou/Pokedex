@@ -13,7 +13,12 @@ export class PokemonListComponent implements OnInit {
 
   constructor(private service: PokedexService) { }
 
+//appel de l'attribut de la pokedex-page  
+  
   @Input() pokemons: Pokemon[];
+  
+// envoie des donner au click
+  
   @Output() pokemonClick = new EventEmitter<Pokemon>();
 
   ngOnInit() { this.pokemons = this.service.pokemons
