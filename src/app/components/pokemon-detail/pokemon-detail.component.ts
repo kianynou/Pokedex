@@ -10,6 +10,8 @@ export class PokemonDetailComponent implements OnInit {
 
   constructor() { }
 
+//appel de l'input de la pokedex-page  
+  
   @Input() detailedPokemon: Pokemon;
 
 
