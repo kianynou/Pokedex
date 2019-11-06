@@ -11,6 +11,8 @@ export class PokedexService {
 
   constructor() { }
 
+ //fonctionnalitée d'ajout d'un pokemon à la liste 
+  
   addPokemon(pokemon: Pokemon) {
     this.pokemons.push(pokemon)
   }
